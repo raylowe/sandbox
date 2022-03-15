@@ -10,7 +10,7 @@ import {
 import Home from "../src/pages/home"
 import About from "../src/pages/about"
 import Users from "../src/pages/users"
-import Modal from "../src/pages/modal"
+import Modal from "./pages"
 
 function App() {
 

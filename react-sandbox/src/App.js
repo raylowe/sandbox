@@ -7,10 +7,11 @@ import {
 } from "react-router-dom";
 
 //Pages
-import Home from "../src/pages/home"
-import About from "../src/pages/about"
-import Users from "../src/pages/users"
-import Modal from "./pages"
+import Home from "./pages/home"
+import About from "./pages/about"
+import Users from "./pages/users"
+import Modal from "./pages/modal"
+import AccordionPage from "./pages/accordion";
 
 function App() {
 
@@ -31,6 +32,9 @@ function App() {
             <li>
               <Link to="/modal">Modal</Link>
             </li>
+            <li>
+              <Link to="/accordion">Accordion</Link>
+            </li>
           </ul>
         </nav>
 
@@ -41,6 +45,7 @@ function App() {
           <Route path="/users" element={<Users />} />
           <Route path="/" element={<Home />} />
           <Route path="/modal" element={<Modal/>} />
+          <Route path="/accordion" element={<AccordionPage/>} />
         </Routes>
       </div>
     </Router>

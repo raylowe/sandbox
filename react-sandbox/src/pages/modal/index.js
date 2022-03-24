@@ -3,8 +3,8 @@ import { useState } from "react";
 import ReactModal from 'react-modal';
 
 //actions
-import ShowFirstModal from "../modal/_action/ShowFirstModal";
-import ShowSecondModal from "../modal/_action/ShowSecondModal";
+import ShowFirstModal from "../../modal/_action/ShowFirstModal";
+import ShowSecondModal from "../../modal/_action/ShowSecondModal";
 
 function Modal() {
 

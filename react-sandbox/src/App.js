@@ -11,7 +11,8 @@ import Home from "./pages/home"
 import About from "./pages/about"
 import Users from "./pages/users"
 import Modal from "./pages/modal"
-import AccordionPage from "./pages/accordion";
+import AccordionPage from "./pages/accordion"
+import DragAndDrop from "./pages/dnd"
 
 function App() {
 
@@ -35,6 +36,9 @@ function App() {
             <li>
               <Link to="/accordion">Accordion</Link>
             </li>
+            <li>
+              <Link to="/dnd">Drag and Drop</Link>
+            </li>
           </ul>
         </nav>
 
@@ -46,6 +50,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/modal" element={<Modal/>} />
           <Route path="/accordion" element={<AccordionPage/>} />
+          <Route path="/dnd" element={<DragAndDrop/>} />
         </Routes>
       </div>
     </Router>

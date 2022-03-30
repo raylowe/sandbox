@@ -13,6 +13,7 @@ import Users from "./pages/users"
 import Modal from "./pages/modal"
 import AccordionPage from "./pages/accordion"
 import DragAndDrop from "./pages/dnd"
+import AtlassianDragAndDrop from "./pages/dnd-atlassian"
 
 function App() {
 
@@ -39,6 +40,9 @@ function App() {
             <li>
               <Link to="/dnd">Drag and Drop</Link>
             </li>
+            <li>
+              <Link to="/dnd2">Atlassian Drag and Drop</Link>
+            </li>
           </ul>
         </nav>
 
@@ -51,6 +55,7 @@ function App() {
           <Route path="/modal" element={<Modal/>} />
           <Route path="/accordion" element={<AccordionPage/>} />
           <Route path="/dnd" element={<DragAndDrop/>} />
+          <Route path="/dnd2" element={<AtlassianDragAndDrop/>} />
         </Routes>
       </div>
     </Router>

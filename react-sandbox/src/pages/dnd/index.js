@@ -1,17 +1,17 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import { useEffect, useState } from "react";
+import Container from './Container'
+import { DndProvider } from 'react-dnd'
+import { HTML5Backend } from 'react-dnd-html5-backend'
 
-//pieces
-import Board from './pieces/board'
-import { gameService } from './pieces/game'
 
 function DragAndDrop() {
 
-    const root = document.getElementById('root')
-    gameService.observe((knightPosition) =>
-        ReactDOM.render(<Board knightPosition={knightPosition} />, root)
+    return (
+        <div className="App">
+            <DndProvider backend={HTML5Backend}>
+                <Container />
+            </DndProvider>
+        </div>
     )
-
 }
 export default DragAndDrop
